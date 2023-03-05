@@ -1,4 +1,4 @@
-## Python server and minimal load balancer implemented in Go
+## Python server and minimal load balancer in Go deployed as a microservice.
 
 
 ### HOW TO RUN : 
