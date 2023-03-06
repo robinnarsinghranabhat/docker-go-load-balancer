@@ -3,7 +3,7 @@
 
 ### HOW TO RUN : 
 1. `./scripts.sh` 
-2. From host-machine browser, try hitting `http://localhost:8000/` multiple times. EAch time, we have request handled by different server container.
+2. host-machine browser is our client. Try hitting `http://localhost:8000/` multiple times. Each time, we have request routed by load-balancer to different server container.
 
 
 ### HOW IT WORKS : 
@@ -13,4 +13,4 @@ We spin up two server containers.
 Inside go-load-balancer, we have dockerfile to create a simple load-balancer.
 Client requests are handled by this server. And it forwards them to each server in round-robin fashion.   
 
-NOTE : Although not practical, for demonstration purpose, We put all three networks in a same network-interface.
+NOTE : Although not practical, for demonstration purpose, all three containers are in same network-interface i.e. they emulate as if they are on a same network (imagine 3 machines connected to a router ).
